@@ -1,7 +1,7 @@
-mod day10;
-use day10::run;
+mod day11;
+use day11::run;
 
-const DAY: usize = 10;
+const DAY: usize = 11;
 const TESTING: bool = false;
 
 fn fetch_input() -> String {
