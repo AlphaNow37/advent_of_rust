@@ -1,12 +1,14 @@
-mod day14;
-use day14::run;
+extern crate core;
 
-const DAY: usize = 14;
+mod day15;
+use day15::run;
+
+const DAY: usize = 15;
 const TESTING: bool = false;
 
 fn fetch_input() -> String {
     let filename = format!("{}\\day{}.txt", (if TESTING {"tests"} else {"inputs"}), DAY);
-    std::fs::read_to_string(&filename).expect(format!("Failed to read {}", &filename).as_str())
+    std::fs::read_to_string(&filename).expect(format!("Failed to read {}", &filename).as_str()).replace("\r", "")
 }
 
 fn main() {
